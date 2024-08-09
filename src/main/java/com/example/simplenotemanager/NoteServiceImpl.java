@@ -26,10 +26,7 @@ public class NoteServiceImpl implements NoteService {
     }
 
     @Override
-    public void addNote(String title, String text) {
-        Note note = new Note();
-        note.setTitle(title);
-        note.setText(text);
+    public void addNote(Note note) {
         noteRepository.save(note);
     }
 
