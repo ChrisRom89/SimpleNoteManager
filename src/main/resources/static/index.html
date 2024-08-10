@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Note Manager</title>
+    <script src="lib.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Simple Note Manager</h1>
+
+        <div id="noteArea">
+            <h2>Available Notes</h2>
+            <ul id="displayNotesList">
+            </ul>
+            <script>
+                displayNotes();
+            </script>
+        </div>
+
+        <div id="controlArea">
+            <h2>Enter a new Note</h2>
+            <form id="formAddNewNote">
+                <div id="newNoteSectionTitle">
+                    <label for="noteTitle">Title:</label>
+                    <input name="title" id="noteTitle" value="">
+                </div>
+                <div id="newNoteSectionText">
+                    <label for="noteText">Text:</label>
+                    <textarea name="text" id="noteText"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Add note</button>
+                </div>
+            </form>
+
+            <script>
+                document.getElementById('formAddNewNote').addEventListener('submit', function(event) {
+                event.preventDefault(); // prevent from sending automatically
+
+                addNote();
+            });
+            </script>
+        </div>
+    </div>
+
+</body>
+</html>

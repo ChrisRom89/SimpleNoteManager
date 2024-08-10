@@ -3,8 +3,7 @@
 Web application for creating, modifying, deleting and visualizing notes.
 
 Every note consists of the title and some plain text. All the notes are listed on a single web page (client). The user
-can enter new notes by clicking on a single button opening  
-a form with two edit fields for the title and the note text.
+can enter new notes by clicking on a button opening taking the input data from a edit field and a textarea.
 
 The front-end is written with HTML, CSS and java script. On the back-end site a REST API is written in Java together
 with the Spring framework.  
