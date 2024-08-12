@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Simple Note Manager</title>
+    <link rel="stylesheet" type="text/css" href="styling.css" />
+    <!-- load font awesome icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="lib.js"></script>
 </head>
 <body>
     <div id="wrapper">
-        <h1>Simple Note Manager</h1>
+        <div id="headsec">
+            <h1>Simple Note Manager</h1>
+        </div>
 
+        <!-- send REST request obtaining all available notes from the storage and display in unordered list -->
         <div id="noteArea">
             <h2>Available Notes</h2>
             <ul id="displayNotesList">
@@ -18,6 +24,9 @@
             </script>
         </div>
 
+        <hr>
+
+        <!-- section for adding a new note into storage. A click on the "Add Note" button sends a REST POST request -->
         <div id="controlArea">
             <h2>Enter a new Note</h2>
             <form id="formAddNewNote">
@@ -27,10 +36,10 @@
                 </div>
                 <div id="newNoteSectionText">
                     <label for="noteText">Text:</label>
-                    <textarea name="text" id="noteText"></textarea>
+                    <textarea name="text" id="noteText" rows="10" cols="50"></textarea>
                 </div>
-                <div>
-                    <button type="submit">Add note</button>
+                <div id="newNoteSectionSubmit">
+                    <button type="submit">Add Note</button>
                 </div>
             </form>
 

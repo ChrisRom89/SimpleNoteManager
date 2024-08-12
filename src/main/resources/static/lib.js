@@ -30,21 +30,32 @@ function displayNotes() {
 
                 let li = document.createElement("li");
                 li.innerText = item.title + ': ' + item.text;
-                newDivElement.appendChild(li);
 
                 const deleteButton = document.createElement('button');
-                deleteButton.innerText = "Delete";
+                deleteButton.className = "btnStyled";
                 deleteButton.onclick = function() {
                     deleteNote(item.id);
                 }
-                newDivElement.appendChild(deleteButton);
+                const buttonIconElement = document.createElement('a');
+                buttonIconElement.className = 'fa fa-trash';
+                deleteButton.appendChild(buttonIconElement);
+                li.appendChild(deleteButton);
 
+                newDivElement.appendChild(li);
                 elementList.appendChild(newDivElement);
             })
         })
         .catch((err) => {
             console.log(`Error fetching: ${err}`)
         });
+}
+
+/**
+ * This function simply clears the two elements: text input field (id=noteTitle) and the textarea (id=noteText)
+ */
+function clearInputFields() {
+    document.getElementById('noteTitle').value = '';
+    document.getElementById('noteText').value = '';
 }
 
 /**
@@ -81,6 +92,7 @@ function addNote() {
         })
         .then(data => {
             console.log('Adding note successful');
+            clearInputFields();
             location.reload();
         })
         .catch(error => {

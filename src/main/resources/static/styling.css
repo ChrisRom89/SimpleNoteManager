@@ -1,0 +1,128 @@
+
+/* ==============================
+    General Styles and Layout
+ ================================ */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #8c8c8c;
+    color: white;
+    font-family: Verdana, Arial, Helvetiva, sans-serif;
+}
+
+div#wrapper {
+    color: black;
+    background-color: white;
+    width: 80%;
+    margin: 10px auto 10px auto;
+    padding-bottom: 30px;
+}
+
+div#headsec {
+    padding: 10px 20px 4em 20px;
+}
+
+div#headsec h1 {
+    margin-left: 40%;
+    margin-top: 20px;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+/* ==============================
+    For elements in the body
+ ================================ */
+
+div#noteArea {
+    padding-bottom: 20px;
+}
+
+div.noteEntryDiv {
+    margin: 5px 50px 1em 50px;
+    background-color: #7dff89;
+    border-radius: 10px;
+}
+
+div#noteArea ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+div#noteArea ul.a {
+    list-style-position: inside;
+    padding-left: 5px;
+}
+
+div#noteArea ul li {
+    padding: 5px;
+    margin-left: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+div#noteArea button {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+
+.btnStyled {
+    color: black;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+div#controlArea {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+form#formAddNewNote {
+    margin: 1em 1em 2em 1em;
+    border-radius: 5px;
+    background-color: rgba(70,255,13,0.2);
+}
+
+div#newNoteSectionTitle {
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+div#newNoteSectionText {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: flex-start;
+}
+
+div#newNoteSectionText label {
+    margin-right: 5px;
+}
+
+div#newNoteSectionText textarea {
+    flex: 1;
+    width: 100%;
+    max-width: 1280px;
+    padding-right: 20px;
+}
+
+div#newNoteSectionSubmit {
+    margin-left: 4em;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+div#newNoteSectionSubmit button {
+    width: 100px;
+    height: 30px;
+}
