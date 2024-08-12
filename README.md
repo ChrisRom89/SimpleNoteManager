@@ -6,7 +6,7 @@ Every note consists of the title and some plain text. All the notes are listed o
 can enter new notes by clicking on a button opening taking the input data from a edit field and a textarea.
 
 The front-end is written with HTML, CSS and java script. On the back-end site a REST API is written in Java together
-with the Spring framework.  
+with the Spring framework. A H2 database acts as storage. 
 The IDE intelliJ makes it very easy to set this up and maintain.
 
 The architecture on the top level of this application looks like this:
