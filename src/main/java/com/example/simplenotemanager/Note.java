@@ -5,6 +5,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+/**
+ * A note consists of two basic (string) parts: title and text.
+ */
 @Entity
 public class Note {
 

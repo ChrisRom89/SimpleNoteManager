@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 import java.util.Iterator;
 import java.util.Optional;
 
+/**
+ * Concrete implementation of the service layer with constructor injection.
+ */
 @Service
 public class NoteServiceImpl implements NoteService {
     private final NoteRepository noteRepository;
