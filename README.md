@@ -25,3 +25,5 @@ The architecture on the server site is shown in the image below:
 ![The backend architecture](/doc/images/SimpleNoteManager_ServerArchitecture.png)
 Dependency Injection is used to get a loose coupling. Hence the application becomes more reusable, maintainable and
 testable.
+The API can be simply tested with the command line program *cURL*, e.g. creating and storing a new note with 
+    `curl -X POST http://localhost:8080/api -H "Content-Type: application/json" -d '{"Id": 1, "title": "Titel1", "text" : "My first note."}'`
